@@ -38,8 +38,8 @@ ul li:nth-child(3n) a {
   position: relative;
   top: -5px;
 }
-ul li a:hover,
-ul li a:focus {
+ul li .a:hover,
+ul li .a:focus {
   box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.7);
   transform: scale(1.25);
   position: relative;
@@ -66,7 +66,7 @@ ul {
   justify-content: center;
   padding: 2rem;
 }
-ul li a {
+ul li .a {
   text-decoration: none;
   color: #000;
   background: #243b55ff;
