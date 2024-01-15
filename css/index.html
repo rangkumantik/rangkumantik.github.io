@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengerjaan Kak..</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="text-center mt-[50%] bg-[#1d2a35] text-white">
+    <p>Dalam pengerjaan ya kak!</p>
+    <p>Kapan selesai? <button onclick="myFunction()" class="underline"> jawaban</button></p>
+    <div id="jawaban" style="display: none">
+        <p class="mt-5">Gak Tau</p>
+        <button class="mt-5">Balik mendingan <a href="../index.html" class="underline">ke sini</a></button>
+    </div>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("jawaban");
+
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
