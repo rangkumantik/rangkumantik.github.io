@@ -45,14 +45,14 @@ let cssGit = (document.getElementById("btnCssGit").innerHTML = `
     &nbsp;&nbsp;border-radius: 5px;
     <br>
 }`);
-let htmlBootsGet = document.getElementById("btnHtmlBoots").innerHTML = "&lt;button class=&quot;Bootstrap&quot;&gt;Get started&lt;/button&gt;"
-let htmlBootsDwn = document.getElementById("btnHtmlBoots").innerHTML = "&lt;button class=&quot;Bootstrap&quot;&gt;Get started&lt;/button&gt;"
+let htmlBootsGet = document.getElementById("btnHtmlBootsGet").innerHTML = "&lt;button class=&quot;getStarted&quot;&gt;Get started&lt;/button&gt;"
+let htmlBootsDwn = document.getElementById("btnHtmlBootsDwn").innerHTML = "&lt;button class=&quot;download&quot;&gt;Download&lt;/button&gt;"
 let cssBoots = (document.getElementById("btnCssBoots").innerHTML = `
-.bootsrap{
+.getStarted{
     <br>
-    &nbsp;&nbsp;background-color: rgb(64, 164, 79);
+    &nbsp;&nbsp;background-color: rgb(121, 82, 179);
     <br>
-    &nbsp;&nbsp;padding: 12px 160px;
+    &nbsp;&nbsp;padding: 12px 24px;
     <br>
     &nbsp;&nbsp;color: white;
     <br>
@@ -60,4 +60,16 @@ let cssBoots = (document.getElementById("btnCssBoots").innerHTML = `
     <br>
     &nbsp;&nbsp;border-radius: 5px;
     <br>
-}`);
+}<br>
+.download{
+    <br>
+    &nbsp;&nbsp;padding: 12px 160px;
+    <br>
+    &nbsp;&nbsp;color: rgb(121, 82, 179);
+    <br>
+    &nbsp;&nbsp;border: 1px solid rgb(108, 117, 125);
+    <br>
+    &nbsp;&nbsp;border-radius: 5px;
+    <br>
+}
+`);
