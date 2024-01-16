@@ -8,7 +8,7 @@ let cssUber = (document.getElementById("btnCssUber").innerHTML = `
     <br>
     &nbsp;&nbsp;background-color: black;
     <br>
-    &nbsp;&nbsp;padding: 12px 20px;
+    &nbsp;&nbsp;padding: 12px 20px;;
     <br>
     &nbsp;&nbsp;color: white;
     <br>
@@ -17,9 +17,9 @@ let cssUber = (document.getElementById("btnCssUber").innerHTML = `
 }`);
 let htmlAma = document.getElementById("btnHtmlAma").innerHTML = "&lt;button class=&quot;amazon&quot;&gt;Add to Cart&lt;/button&gt;"
 let cssAma = (document.getElementById("btnCssAma").innerHTML = `
-.uber{
+.amazon{
     <br>
-    &nbsp;&nbsp;background-color: rgb(255, 216, 20);
+    &nbsp;&nbsp;background-color: rgb(64, 164, 79);
     <br>
     &nbsp;&nbsp;padding: 12px 160px;
     <br>
@@ -28,5 +28,36 @@ let cssAma = (document.getElementById("btnCssAma").innerHTML = `
     &nbsp;&nbsp;border: none;
     <br>
     &nbsp;&nbsp;border-radius: 30px;
+    <br>
+}`);
+let htmlGit = document.getElementById("btnHtmlGit").innerHTML = "&lt;button class=&quot;github&quot;&gt;Sign up&lt;/button&gt;"
+let cssGit = (document.getElementById("btnCssGit").innerHTML = `
+.github{
+    <br>
+    &nbsp;&nbsp;background-color: rgb(64, 164, 79);
+    <br>
+    &nbsp;&nbsp;padding: 12px 160px;
+    <br>
+    &nbsp;&nbsp;color: white;
+    <br>
+    &nbsp;&nbsp;border: none;
+    <br>
+    &nbsp;&nbsp;border-radius: 5px;
+    <br>
+}`);
+let htmlBootsGet = document.getElementById("btnHtmlBoots").innerHTML = "&lt;button class=&quot;Bootstrap&quot;&gt;Get started&lt;/button&gt;"
+let htmlBootsDwn = document.getElementById("btnHtmlBoots").innerHTML = "&lt;button class=&quot;Bootstrap&quot;&gt;Get started&lt;/button&gt;"
+let cssBoots = (document.getElementById("btnCssBoots").innerHTML = `
+.bootsrap{
+    <br>
+    &nbsp;&nbsp;background-color: rgb(64, 164, 79);
+    <br>
+    &nbsp;&nbsp;padding: 12px 160px;
+    <br>
+    &nbsp;&nbsp;color: white;
+    <br>
+    &nbsp;&nbsp;border: none;
+    <br>
+    &nbsp;&nbsp;border-radius: 5px;
     <br>
 }`);
