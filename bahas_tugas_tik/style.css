@@ -5,7 +5,6 @@
 
 body {
   background-color: var(--bg);
-  font-family: "Jua", sans-serif;
 }
 main{
   margin-left: 200px;
@@ -19,6 +18,7 @@ main{
   left: 0;
   background-color: #111;
   overflow-x: hidden;
+  font-family: "Jua", sans-serif;
   padding-top: 20px;
 }
 .sideNav h1{
@@ -41,6 +41,7 @@ main{
   top: 0;
   right: 25px;
   font-size: 36px;
+  font-family: "Jua", sans-serif;
   margin-left: 50px;
 }
 #main {
@@ -54,6 +55,7 @@ main{
   top: 0;
   width: 100%;
   z-index: 99;
+  font-family: "Jua", sans-serif;
 }
 .navbar a {
   float: left;
@@ -78,6 +80,7 @@ main{
   font-size: 16px;
   border: none;
   cursor: pointer;
+
 }
 .dropbtn:hover,
 .dropbtn:focus {
@@ -86,8 +89,10 @@ main{
 .dropdown {
   position: relative;
   display: inline-block;
+  font-family: "Jua", sans-serif;
 }
 .dropdown-content {
+  font-family: "Jua", sans-serif;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
