@@ -34,7 +34,7 @@
       <a href="#contact">C++</a>
       <a href="#contact">EXCEL</a>
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">lainnya</button>
+        <button onclick="clickTest()" class="dropbtn">lainnya</button>
         <div id="myDropdown" class="dropdown-content">
           <a href="#">Bahas Tugas Tik</a>
           <a href="#">Minta bantuan</a>
@@ -42,10 +42,12 @@
       </div>
     </div>
     <main>
-      <h1 class="font-bold text-center text-2xl text-white py-[60px] sm:py-[30px]">
+      <h1
+        class="font-bold text-center text-2xl text-white py-[60px] sm:py-[30px]"
+      >
         BAHAS TUGAS NIH + ADA CODENYA!
       </h1>
-      <hr class="d-none"/>
+      <hr class="d-none" />
       <section>
         <div class="content flex justify-center mt-6">
           <img
@@ -58,16 +60,26 @@
           <div class="ans text-white bg-[#9a9b9c]/20 rounded-2xl p-4">
             <p>SOAL <b>2a. Uber</b></p>
             <p>Hasil:</p>
-            <button class="bg-black text-white p-3 px-12">Request now</button>
+            <button onclick="clickTest()" class="bg-black text-white p-3 px-12">
+              Request now
+            </button>
             <p>Codenya:</p>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>Pada file <b>index.html</b></h1>
+              <div class="flex justify-between py-2">
+                <h1>Pada file <b>index.html</b></h1>
+                <button onclick="copyHtmlUber()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
               <div class="bg-slate-900 p-2">
                 <p id="btnHtmlUber"></p>
               </div>
             </div>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>CSS untuk button Uber <b></b></h1>
+              <div class="flex justify-between py-2">
+                <h1>CSS untuk button Uber</h1>
+                <button onclick="uberCssCopy()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
               <div class="bg-slate-900 p-2">
                 <p id="btnCssUber"></p>
               </div>
@@ -76,18 +88,28 @@
           <div class="ans text-white mt-5 bg-[#9a9b9c]/20 rounded-2xl p-4">
             <p>SOAL <b>2b. Amazon</b></p>
             <p>Hasil:</p>
-            <button class="bg-[#ffd814] text-black p-3 px-12 rounded-[30px]">
+            <button
+              onclick="clickTest()"
+              class="bg-[#ffd814] text-black p-3 px-12 rounded-[30px]"
+            >
               Add to Cart
             </button>
             <p>Codenya:</p>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>Pada file <b>index.html</b></h1>
+              <div class="flex justify-between py-2">
+                <h1>Pada file <b>index.html</b></h1>
+                <button onclick="copyAmaCode()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
               <div class="bg-slate-900 p-2">
                 <p id="btnHtmlAma"></p>
               </div>
             </div>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>CSS untuk button Uber <b></b></h1>
+              <div class="flex justify-between py-2">
+                <h1>CSS untuk button Amazon</h1>
+                <button onclick="amaCssCopy()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
               <div class="bg-slate-900 p-2">
                 <p id="btnCssAma"></p>
               </div>
@@ -96,18 +118,29 @@
           <div class="ans text-white mt-5 bg-[#9a9b9c]/20 rounded-2xl p-4">
             <p>SOAL <b>2c. Github</b></p>
             <p>Hasil:</p>
-            <button class="bg-[#40a44f] p-3 px-12 rounded-[5px]">
+            <button
+              onclick="clickTest()"
+              class="bg-[#40a44f] p-3 px-12 rounded-[5px]"
+            >
               Sign up
             </button>
             <p>Codenya:</p>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>Pada file <b>index.html</b></h1>
+              <div class="flex justify-between py-2">
+                <h1>Pada file <b>index.html</b></h1>
+                <button onclick="copyGitCode()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
               <div class="bg-slate-900 p-2">
                 <p id="btnHtmlGit"></p>
               </div>
             </div>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>CSS untuk button Github <b></b></h1>
+              <div class="flex justify-between py-2">
+                <h1>CSS untuk button Github</h1>
+                <button onclick="gitCssCopy()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
               <div class="bg-slate-900 p-2">
                 <p id="btnCssGit"></p>
               </div>
@@ -116,28 +149,78 @@
           <div class="ans text-white mt-5 bg-[#9a9b9c]/20 rounded-2xl p-4">
             <p>SOAL <b>2d. Bootstrap</b></p>
             <p>Hasil:</p>
-              <button class="bg-[#40a44f] p-3 px-6 rounded-[5px]">
-                Get started
-              </button>
-              <button
-                class="p-3 px-12 rounded-[5px] border-2 text-[#7952b3] border-[#6c757d]"
-              >
-                Download
-              </button>
+            <button
+              onclick="clickTest()"
+              class="bg-[#7952b3] p-3 px-6 rounded-[5px]"
+            >
+              Get started
+            </button>
+            <button
+              onclick="clickTest()"
+              class="p-3 px-12 rounded-[5px] border-2 text-[#6c757d] border-[#6c757d]"
+            >
+              Download
+            </button>
 
             <p>Codenya:</p>
             <div class="mt-5 bg-slate-600 p-4 bg-[#9a9b9c]/20 rounded-2xl p-4">
-              <h1>Pada file <b>index.html</b></h1>
+              <div class="flex justify-between py-2">
+                <h1>Pada file <b>index.html</b></h1>
+                <button onclick="copyBootsCode()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
               <div class="bg-slate-900 p-2">
                 <p id="btnHtmlBootsGet"></p>
-                <br>
+                <br />
                 <p id="btnHtmlBootsDwn"></p>
               </div>
             </div>
             <div class="mt-5 bg-slate-600 p-4">
-              <h1>CSS untuk button Bootstrap <b></b></h1>
+              <div class="flex justify-between py-2">
+                <h1>CSS untuk button Bootstrap</h1>
+                <button onclick="bootsCssCopy()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
               <div class="bg-slate-900 p-2">
                 <p id="btnCssBoots"></p>
+              </div>
+            </div>
+          </div>
+          <div class="ans text-white mt-5 bg-[#9a9b9c]/20 rounded-2xl p-4">
+            <p>SOAL <b>2e. LinkedIn</b></p>
+            <p>Hasil:</p>
+            <button
+              onclick="clickTest()"
+              class="bg-[#0a66c2] p-3 px-6 rounded-full"
+            >
+              Apply on company website
+            </button>
+            <button
+              onclick="clickTest()"
+              class="p-3 px-12 rounded-[100px] border-2 text-[#0a66c2] border-[#0a66c2]"
+            >
+              Save
+            </button>
+
+            <p>Codenya:</p>
+            <div class="mt-5 bg-slate-600 p-4 bg-[#9a9b9c]/20 rounded-2xl p-4">
+              <div class="flex justify-between py-2">
+                <h1>Pada file <b>index.html</b></h1>
+                <button onclick="copyLinkCode()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              <div class="bg-slate-900 p-2">
+                <p id="btnHtmlLinkApply"></p>
+                <br />
+                <p id="btnHtmlLinkSave"></p>
+              </div>
+            </div>
+            <div class="mt-5 bg-slate-600 p-4">
+              <div class="flex justify-between py-2">
+                <h1>CSS untuk button LinkIn</h1>
+                <button onclick="linkCssCopy()" class="hover:bg-slate-900 px-2 duration-300 rounded-[4px]">Copy</button>
+              </div>
+              
+              <div class="bg-slate-900 p-2">
+                <p id="btnCssLinked"></p>
               </div>
             </div>
           </div>
