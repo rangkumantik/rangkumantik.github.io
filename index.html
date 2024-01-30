@@ -9,39 +9,53 @@
       href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div class="sideNav">
       <h1>Navbar</h1>
-      <a href="#">HTML</a>
-      <a href="css/index.html">CSS</a>
-      <a href="c_plus_plus/index.html">C++</a>
-      <a href="">EXCEL</a>
-      <a href="bahas_tugas_tik/index.html">Bahas Tugas</a>
-      <a href="">'Bantuin TIK'</a>
+      <a href="../index.html">HTML</a>
+      <a href="../css/index.html">CSS</a>
+      <a href="../c_plus_plus/index.html">C++</a>
+      <a href="../excel/index.html">EXCEL</a>
+      <a href="#">Bahas Tugas</a>
+      <a href="#">'Bantuin TIK'</a>
     </div>
     <div class="navbar">
-      <a href="#home">HTML</a>
-      <a href="c_plus_plus/index.html">CSS</a>
-      <a href="#contact">C++</a>
-      <a href="#contact">EXCEL</a>
+      <a href="../index.html">HTML</a>
+      <a href="../css/index.html">CSS</a>
+      <a href="../c_plus_plus/index.html">C++</a>
+      <a href="../excel/">EXCEL</a>
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">lainnya</button>
+        <button onclick="clickTest()" class="dropbtn">lainnya</button>
         <div id="myDropdown" class="dropdown-content">
-          <a href="bahas_tugas_tik/index.html">Bahas Tugas Tik</a>
-          <a href="#">Minta bantuan</a>
+          <a href="#">Bahas Tugas Tik</a>
+          <a href="#">'Bantuin TIK'</a>
         </div>
       </div>
     </div>
     <main>
-      <h1>Rangkuman TIK</h1>
+      <section class="text-center text-xl m-5 sm:text-3xl">
+        <h1>Selamat datang!</h1>
+      </section>
       <hr />
       <section>
         <header>
-          <h1>Apa itu HTML?</h1>
+          <h1 class="subTopic">Apa itu HTML?</h1>
         </header>
-        <ul>
-          <li>
+        <ul class="ulPost">
+          <li class="liPost">
             <div class="a">
               <p>HTML adalah <ins>Hyper Text Markup Language</ins></p>
             </div>
@@ -52,10 +66,11 @@
             </div>
           </li>
         </ul>
-      </section>
-      <hr />
-      <section>
-        <h1>Ini adalah code awal dari HTML</h1>
+      </section> 
+      <br>
+      <hr/>
+      <section class="my-5">
+        <h1 class="subTopic">Ini adalah code awal dari HTML</h1>
         <div
           style="
             overflow: hidden;
@@ -88,9 +103,9 @@
         </div>
       </section>
       <hr />
-      <section>
-        <h1>Element Heading</h1>
-        <ul>
+      <section class="my-5">
+        <h1 class="subTopic">Element Heading</h1>
+        <ul class="ulPost">
           <li>
             <div class="a">
               <p>Element heading dibagi menjadi 6</p>
@@ -138,8 +153,8 @@
         </p>
       </section>
       <hr />
-      <section>
-        <h1>Element Paragraf</h1>
+      <section class="my-5">
+        <h1 class="subTopic">Element Paragraf</h1>
         <div
           style="
             overflow: hidden;
@@ -172,9 +187,9 @@
         </div>
       </section>
       <hr>
-      <section>
-          <h1>Attributes</h1>
-          <ul>
+      <section class="my-5">
+          <h1 class="subTopic">Attributes</h1>
+          <ul class="ulPost">
             <li>
               <div class="a">
                 <p>Attributes berguna untuk menunjukan <ins>informasi secara spesifik dari element</ins></p>
@@ -184,61 +199,61 @@
           <br>
           <br>
           <p>
-              <span>href pada element a</span>
-              <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:488px;position:relative"><div style="width:100%;padding-bottom:47.131147540983605%"></div><iframe width="488" height="230" title="Heading" src="https://snappify.com/embed/4193416e-ede7-471a-986c-b688570e0d1c/e9ed71f2-2143-4e25-a0dd-9569ad5aee8d?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+            <span>href pada element a</span>
+            <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:488px;position:relative"><div style="width:100%;padding-bottom:47.131147540983605%"></div><iframe width="488" height="230" title="Heading" src="https://snappify.com/embed/4193416e-ede7-471a-986c-b688570e0d1c/e9ed71f2-2143-4e25-a0dd-9569ad5aee8d?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
           </p>
           <br>
           <br>
           <p>
-              <span>src, width, height, alt pada element img</span>
-              <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:488px;position:relative"><div style="width:100%;padding-bottom:55.73770491803278%"></div><iframe width="488" height="272" title="Heading" src="https://snappify.com/embed/4193416e-ede7-471a-986c-b688570e0d1c/a1a9219a-8551-4994-9d6e-ed35cd378bbb?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+            <span>src, width, height, alt pada element img</span>
+            <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:488px;position:relative"><div style="width:100%;padding-bottom:55.73770491803278%"></div><iframe width="488" height="272" title="Heading" src="https://snappify.com/embed/4193416e-ede7-471a-986c-b688570e0d1c/a1a9219a-8551-4994-9d6e-ed35cd378bbb?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
           </p>
           <br>
           <br>
           <p>
-              <span>style yang ada pada hampir semua element pada HTML</span>
-              <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:600px;position:relative"><div style="width:100%;padding-bottom:43.333333333333336%"></div><iframe width="600" height="260" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/7b64f7b7-dd3f-477e-9504-e81f1a83b86a?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+            <span>style yang ada pada hampir semua element pada HTML</span>
+            <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:600px;position:relative"><div style="width:100%;padding-bottom:43.333333333333336%"></div><iframe width="600" height="260" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/7b64f7b7-dd3f-477e-9504-e81f1a83b86a?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
           </p>
       </section>
       <hr>
-      <section>
-          <h1>Format</h1>
+      <section class="my-5">
+          <h1 class="subTopic">Format</h1>
           <p>
-              <span>Format Element berguna untuk menunjukan sebuah kespesialan dari text</span>
-              <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:600px;position:relative"><div style="width:100%;padding-bottom:68.33333333333333%"></div><iframe width="600" height="410" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/792bba13-a35c-42d0-b42f-d0a0ef491e0c?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+            <span>Format Element berguna untuk menunjukan sebuah kespesialan dari text</span>
+            <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:600px;position:relative"><div style="width:100%;padding-bottom:68.33333333333333%"></div><iframe width="600" height="410" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/792bba13-a35c-42d0-b42f-d0a0ef491e0c?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
           </p>
       </section>
       <hr>
-      <section>
-          <h1>CSS</h1>
+      <section class="my-5">
+          <h1 class="subTopic">CSS</h1>
           <p>
-              <span>terdapat 2 tipe CSS yaitu <ins> Internal CSS </ins> dan <ins> External CSS </ins></span>
-              <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:660px;position:relative"><div style="width:100%;padding-bottom:62.121212121212125%"></div><iframe width="660" height="410" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/8eb59c82-bcce-4f66-bc8b-178ed9391270?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+            <span>terdapat 2 tipe CSS yaitu <ins> Internal CSS </ins> dan <ins> External CSS </ins></span>
+            <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:660px;position:relative"><div style="width:100%;padding-bottom:62.121212121212125%"></div><iframe width="660" height="410" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/8eb59c82-bcce-4f66-bc8b-178ed9391270?responsive=1&autoplay=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
           </p>
-      </section>
+      </section class="my-5">
       <hr>
       <section>
-          <h1>Tabel</h1>
+          <h1 class="subTopic">Tabel</h1>
           <p>
-              <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:660px;position:relative"><div style="width:100%;padding-bottom:80.30303030303031%"></div><iframe width="660" height="530" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/68d4d752-3c1a-49e1-9d46-36901ab444ad?responsive=1&autoplay=1&b=0" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
-              <h1>Hasil</h1>
-              <table style="width:100%">
-                  <tr>
-                    <th>9A</th>
-                    <th>9B</th>
-                    <th>9C</th>
-                  </tr>
-                  <tr>
-                    <td>Contoh Text</td>
-                    <td>Contoh Text</td>
-                    <td>Contoh Text</td>
-                  </tr>
-                  <tr>
-                    <td>Contoh Text</td>
-                    <td>Contoh Text</td>
-                    <td>Contoh Text</td>
-                  </tr>
-                </table>
+            <div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:660px;position:relative"><div style="width:100%;padding-bottom:80.30303030303031%"></div><iframe width="660" height="530" title="code" src="https://snappify.com/embed/f4af63b1-34b6-41fe-b8ef-2db60b079e2a/68d4d752-3c1a-49e1-9d46-36901ab444ad?responsive=1&autoplay=1&b=0" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(270deg,#141E30FF,#243B55FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+            <h1 class="subTopic">Hasil</h1>
+            <table style="width:100%">
+              <tr>
+                <th>9A</th>
+                <th>9B</th>
+                <th>9C</th>
+              </tr>
+              <tr>
+                <td>Contoh Text</td>
+                <td>Contoh Text</td>
+                <td>Contoh Text</td>
+              </tr>
+              <tr>
+                <td>Contoh Text</td>
+                <td>Contoh Text</td>
+                <td>Contoh Text</td>
+              </tr>
+            </table>
           </p>
       </section>
       <hr>

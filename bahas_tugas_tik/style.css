@@ -22,8 +22,10 @@ main{
   padding-top: 20px;
 }
 .sideNav h1{
+  text-align: center;
   color: white;
-  font-size: 16px;
+  padding: 1rem;
+  font-size: 32px;
 }
 .sideNav a {
   padding: 8px 8px 8px 32px;

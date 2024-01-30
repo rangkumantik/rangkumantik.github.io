@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pengerjaan Kak..</title>
+    <title>Rangkuman TIK - CSS</title>
+    <link rel="stylesheet" href="../global/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -17,23 +19,75 @@
       };
     </script>
   </head>
-  <body class="text-center mt-[50%] bg-[#1d2a35] text-white">
-    <p>Dalam pengerjaan ya kak!</p>
-    <p>Kapan selesai? <button onclick="myFunction()" class="underline"> jawaban</button></p>
-    <div id="jawaban" style="display: none">
-        <p class="mt-5">Gak Tau</p>
-        <button class="mt-5">Balik mendingan <a href="../index.html" class="underline">ke sini</a></button>
-    </div>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("jawaban");
-
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      }
-    </script>
+  <body class="bg-[#1d2a35] text-white">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Rangkuman TIK - CSS</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="../index.html" class="nav__link">
+                <i class="bx bx-home-alt nav__icon"></i>
+                <span class="nav__name">HTML</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">CSS</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../c_plus_plus/index.html" class="nav__link">
+                <i class="bx bx-book-alt nav__icon"></i>
+                <span class="nav__name">C++</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../excel/index.html" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>
+                <span class="nav__name">Excel</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../bahas_tugas_tik/index.html" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+                <span class="nav__name">Bahas Tugas</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+                <span class="nav__name">Tanya</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="text-center text- xl m-5 sm:text-3xl">
+        <h1>CSS</h1>
+      </section>
+      <hr />
+      <section>
+        <header>
+          <h1 class="subTopic">Apa itu CSS?</h1>
+        </header>
+        <ul>
+          <li>
+            <div class="a">
+              <p>CSS adalah <ins>Cascading Style Sheets</ins></p>
+            </div>
+          </li>
+          <li>
+            <div class="a">
+              <p>CSS digunakan untuk <ins>mengubah sebuah element HTML yang ingin ditampilkan</ins></p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
