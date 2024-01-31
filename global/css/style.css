@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 :root {
   --header-height: 3rem;
-  --hue: 174;
-  --sat: 63%;
-  --first-color: hsl(var(--hue), var(--sat), 40%);
+  --first-color: #0a66b0;
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: hsl(var(--hue), 12%, 15%);
   --text-color: hsl(var(--hue), 8%, 35%);
@@ -93,7 +91,7 @@ img {
 }
 
 .nav__logo {
-  color: var(--title-color);
+  color: black;
   font-weight: 600;
 }
 
@@ -127,7 +125,7 @@ img {
   flex-direction: column;
   align-items: center;
   row-gap: 4px;
-  color: var(--title-color);
+  color: black;
   font-weight: 600;
 }
 
@@ -141,6 +139,7 @@ img {
 
 .nav__icon {
   font-size: 1.5rem;
+  color: black;
 }
 .active-link {
   position: relative;

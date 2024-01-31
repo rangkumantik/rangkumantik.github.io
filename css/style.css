@@ -5,7 +5,7 @@
 }
 body {
   background-color: var(--bg);
-  font-family: "Jua", sans-serif;
+  
   color: var(--mainText);
 }
 main{
@@ -92,112 +92,7 @@ ul li .a {
 ul li {
   margin: 1em;
 }
-.sideNav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  font-family: "Jua", sans-serif;
-  padding-top: 20px;
-}
-.sideNav h1{
-    text-align: center;
-    color: white;
-    padding: 1rem;
-    font-size: 32px;
-}
-.sideNav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-.sideNav a:hover {
-  color: #f1f1f1;
-}
-.sideNav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  font-family: "Jua", sans-serif;
-  margin-left: 50px;
-}
-#main {
-  transition: margin-left 0.5s;
-  padding: 20px;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #111;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  font-family: "Jua", sans-serif;
-}
-.navbar a {
-  float: left;
-  font-size: 12px;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-.navbar {
-  display: none;
-}
-.dropbtn {
-  background-color: #141e30;
-  color: white;
-  padding: 12px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
 
-}
-.dropbtn:hover,
-.dropbtn:focus {
-  background-color: rgb(21, 61, 88);
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-  font-family: "Jua", sans-serif;
-}
-.dropdown-content {
-  font-family: "Jua", sans-serif;
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 99;
-}
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-}
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-.show {
-  display: block;
-  position: fixed;
-  z-index: 99;
-}
 @media screen and (max-width: 450px) {
   .navbar {
     display: block;
