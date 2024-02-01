@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pengerjaan Kak..</title>
+    <link rel="stylesheet"href="../global/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/dist/boxicons.js' rel='stylesheet'>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,6 +20,51 @@
     </script>
   </head>
   <body class="text-center mt-[50%] bg-[#1d2a35] text-white">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Rangkuman TIK - HTML</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link active-link">
+                <i class='bx bxl-html5 nav__icon'></i>
+                <span class="nav__name">HTML</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="/css/index.html" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>
+                <span class="nav__name">CSS</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../c_plus_plus/index.html" class="nav__link">
+                <i class="bx bx-book-alt nav__icon"></i>
+                <span class="nav__name">C++</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../excel/index.html" class="nav__link">
+                <i class="bx bx-briefcase-alt nav__icon"></i>
+                <span class="nav__name">Excel</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="../bahas_tugas_tik/index.html" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+                <span class="nav__name">Bahas Tugas</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <i class="bx bx-message-square-detail nav__icon"></i>
+                <span class="nav__name">Tanya</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <p>Dalam pengerjaan ya kak!</p>
     <p>Kapan selesai? <button onclick="myFunction()" class="underline"> jawaban</button></p>
     <div id="jawaban" style="display: none">
